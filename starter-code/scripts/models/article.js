@@ -72,7 +72,7 @@
             webDB.execute(
               'SELECT * FROM articletable', // <-----DONE: query our table
               function(rows) {
-                article.loadAll(rows);
+                Article.loadAll(rows);
                 articleView.renderIndexPage();
 
                 // DONE:
